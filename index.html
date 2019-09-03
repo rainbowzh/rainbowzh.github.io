@@ -1,8 +1,8 @@
 <!--
  * @Author: zhouhong07
- * @Date: 2019-09-03 16:36:30
+ * @Date: 2019-08-30 16:52:48
  * @LastEditors: 
- * @LastEditTime: 2019-09-03 16:36:44
+ * @LastEditTime: 2019-09-03 11:37:50
  * @Description: file content
  -->
 <!DOCTYPE html>
@@ -11,9 +11,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>pwa</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <h3>测试</h3>
+    <h3>hello p00wa</h3>
+    <script>
+        if(navigator.serviceWorker != null){
+            navigator.serviceWorker.register('service.js')
+            .then((registartion) => {
+                console.log('支持sw:',registartion.scope)
+            })
+        }
+    </script>
 </body>
 </html>
