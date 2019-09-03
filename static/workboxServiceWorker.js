@@ -2,7 +2,7 @@
  * @Author: zhouhong07
  * @Date: 2019-09-03 18:01:11
  * @LastEditors: 
- * @LastEditTime: 2019-09-03 20:00:22
+ * @LastEditTime: 2019-09-03 20:09:14
  * @Description: file content
  */
 /**
@@ -41,5 +41,12 @@ workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/i
   
   blacklist: [/^\/_/,/\/[^\/?]+\.[^\/]+$/],
 });
+
+workbox.routing.registerRoute(
+  /^https:\/\/rainbowzh.github.io\//i,
+  workbox.strategies.networkFirst({
+    cacheName: 'rainbow-new-cache'
+  })
+)
 
 workbox.googleAnalytics.initialize({});

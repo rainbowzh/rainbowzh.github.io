@@ -1,7 +1,14 @@
+/*
+ * @Author: zhouhong07
+ * @Date: 2019-09-03 18:01:11
+ * @LastEditors: 
+ * @LastEditTime: 2019-09-03 20:04:29
+ * @Description: file content
+ */
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "44f053ed77ec12ae89f1ee73d64150b7",
-    "url": "/index.html"
+    "url": "/"
   },
   {
     "revision": "d228cbbfc64cc5990a38",
