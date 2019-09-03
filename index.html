@@ -2,7 +2,7 @@
  * @Author: zhouhong07
  * @Date: 2019-09-03 17:47:29
  * @LastEditors: 
- * @LastEditTime: 2019-09-03 18:02:40
+ * @LastEditTime: 2019-09-03 19:32:45
  * @Description: file content
  -->
  <!doctype html>
@@ -20,15 +20,6 @@
  
  <body><noscript>You need to enable JavaScript to run this app.</noscript>
      <div id="root"></div>
-     <script>
-         "serviceWorker" in navigator && window.addEventListener("load", function () {
-             navigator.serviceWorker.register("workboxServiceWorker.js").then(function (e) {
-                 console.log("[success] register ", e)
-             }, function (e) {
-                 console.log("[fail]: ", e)
-             })
-         })
-     </script>
      <script>
          ! function (p) {
              function e(e) {

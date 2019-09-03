@@ -1,3 +1,10 @@
+/*
+ * @Author: zhouhong07
+ * @Date: 2019-09-03 18:01:11
+ * @LastEditors: 
+ * @LastEditTime: 2019-09-03 19:47:17
+ * @Description: file content
+ */
 /**
  * Welcome to your Workbox-powered service worker!
  *
@@ -14,7 +21,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.3277778a04fe07b218be2e650e681aec.js"
+  "static/precache-manifest.3277778a04fe07b218be2e650e681aec.js"
 );
 
 workbox.core.skipWaiting();
