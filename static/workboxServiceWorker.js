@@ -2,7 +2,7 @@
  * @Author: zhouhong07
  * @Date: 2019-09-03 18:01:11
  * @LastEditors: 
- * @LastEditTime: 2019-09-03 20:09:14
+ * @LastEditTime: 2019-09-03 20:50:45
  * @Description: file content
  */
 /**
@@ -36,16 +36,10 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.precaching.cleanupOutdatedCaches();
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/index.html"), {
-  
-  blacklist: [/^\/_/,/\/[^\/?]+\.[^\/]+$/],
-});
-
 workbox.routing.registerRoute(
   /^https:\/\/rainbowzh.github.io\//i,
   workbox.strategies.networkFirst({
-    cacheName: 'rainbow-new-cache'
+    cacheName: 'rainbow-static-cache'
   })
 )
 
