@@ -2,7 +2,7 @@
  * @Author: zhouhong07
  * @Date: 2019-09-03 18:01:11
  * @LastEditors: 
- * @LastEditTime: 2019-09-18 16:27:32
+ * @LastEditTime: 2019-09-18 17:27:30
  * @Description: file content
  */
 self.__precacheManifest = (self.__precacheManifest || []).concat([
@@ -10,20 +10,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/index.html"
   },
   {
-    "url": "/static/css/main.chunk.css"
+    "url": "/static/css/main.css"
   },
   {
-    "url": "/static/js/2.chunk.js"
+    "url": "/static/js/index.js"
   },
-  {
-    "url": "/static/js/main.chunk.js"
-  },
-  {
-    "url": "/static/js/runtime~main.js"
-  },
-  {
-    "url": "/static/media/logo.svg"
-  }
+  
 ]);
 
 
