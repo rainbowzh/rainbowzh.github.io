@@ -2,7 +2,7 @@
  * @Author: zhouhong07
  * @Date: 2019-09-03 18:01:11
  * @LastEditors: 
- * @LastEditTime: 2019-09-03 20:57:22
+ * @LastEditTime: 2019-09-18 17:50:32
  * @Description: file content
  */
 /**
@@ -18,7 +18,7 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("https://rainbowzh.github.io/static/workbox-sw.js");
 
 importScripts(
   "https://rainbowzh.github.io/static/precache-manifest.3277778a04fe07b218be2e650e681aec.js"
