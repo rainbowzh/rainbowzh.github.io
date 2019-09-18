@@ -2,12 +2,12 @@
  * @Author: zhouhong07
  * @Date: 2019-09-03 18:01:11
  * @LastEditors: 
- * @LastEditTime: 2019-09-03 20:15:39
+ * @LastEditTime: 2019-09-18 16:27:32
  * @Description: file content
  */
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "url": "/"
+    "url": "/index.html"
   },
   {
     "url": "/static/css/main.chunk.css"
