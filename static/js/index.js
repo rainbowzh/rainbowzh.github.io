@@ -2,7 +2,7 @@
  * @Author: zhouhong07
  * @Date: 2019-09-18 16:45:45
  * @LastEditors: 
- * @LastEditTime: 2019-09-18 17:35:51
+ * @LastEditTime: 2019-09-18 19:33:00
  * @Description: file content
  */
 console.log('innnnn');
@@ -56,15 +56,20 @@ function registerValidSW(swUrl, config) {
   navigator.serviceWorker
     .register(swUrl)
     .then(registration => {
-      console.log('555',swUrl);
+      console.log('555',swUrl, registration);
       
       registration.onupdatefound = () => {
+        alert(1)
         const installingWorker = registration.installing;
+        console.log('777',registration.installing);
+        
         if (installingWorker == null) {
           return;
         }
         installingWorker.onstatechange = () => {
           if (installingWorker.state === 'installed') {
+            console.log('666',navigator.serviceWorker.controller);
+            
             if (navigator.serviceWorker.controller) {
               // At this point, the updated precached content has been fetched,
               // but the previous service worker will still serve the older

@@ -2,7 +2,7 @@
  * @Author: zhouhong07
  * @Date: 2019-09-03 18:01:11
  * @LastEditors: 
- * @LastEditTime: 2019-09-18 17:50:32
+ * @LastEditTime: 2019-09-18 20:54:04
  * @Description: file content
  */
 /**
@@ -33,10 +33,15 @@ workbox.core.clientsClaim();
  * requests for URLs in the manifest.
  * See https://goo.gl/S9QRab
  */
+workbox.core.setCacheNameDetails({
+  prefix: 'rainbow-static-cache',
+  suffix: 'v1.0.0',
+});
+
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {
-  ignoreUrlParametersMatching: [/./],
+  ignoreUrlParametersMatching: [/.*/],
   cleanUrls: false,
 });
 
@@ -45,6 +50,6 @@ workbox.googleAnalytics.initialize({});
 workbox.routing.registerRoute(
   /^https:\/\/rainbowzh.github.io\//i,
   workbox.strategies.networkFirst({
-    cacheName: 'rainbow-static-cache'
+    cacheName: 'rainbow-change-cache'
   })
 )
