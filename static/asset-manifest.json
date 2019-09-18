@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.chunk.css",
+    "main.css": "/static/css/main.css",
     "main.js": "/static/js/main.chunk.js",
     "main.js.map": "/static/js/main.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.js",

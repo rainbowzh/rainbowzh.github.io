@@ -2,7 +2,7 @@
  * @Author: zhouhong07
  * @Date: 2019-09-18 16:45:45
  * @LastEditors: 
- * @LastEditTime: 2019-09-18 17:27:50
+ * @LastEditTime: 2019-09-18 17:35:51
  * @Description: file content
  */
 console.log('innnnn');
@@ -56,6 +56,8 @@ function registerValidSW(swUrl, config) {
   navigator.serviceWorker
     .register(swUrl)
     .then(registration => {
+      console.log('555',swUrl);
+      
       registration.onupdatefound = () => {
         const installingWorker = registration.installing;
         if (installingWorker == null) {
