@@ -2,7 +2,7 @@
  * @Author: zhouhong07
  * @Date: 2019-09-03 18:01:11
  * @LastEditors: 
- * @LastEditTime: 2019-09-18 20:54:04
+ * @LastEditTime: 2019-09-18 20:59:46
  * @Description: file content
  */
 /**
@@ -47,9 +47,9 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest, {
 
 workbox.googleAnalytics.initialize({});
 
-workbox.routing.registerRoute(
-  /^https:\/\/rainbowzh.github.io\//i,
-  workbox.strategies.networkFirst({
-    cacheName: 'rainbow-change-cache'
-  })
-)
+// workbox.routing.registerRoute(
+//   /^https:\/\/rainbowzh.github.io\//i,
+//   workbox.strategies.networkFirst({
+//     cacheName: 'rainbow-change-cache'
+//   })
+// )
