@@ -2,7 +2,7 @@
  * @Author: zhouhong07
  * @Date: 2019-09-03 18:01:11
  * @LastEditors: 
- * @LastEditTime: 2019-09-18 17:49:08
+ * @LastEditTime: 2019-09-18 17:53:27
  * @Description: file content
  */
 self.__precacheManifest = (self.__precacheManifest || []).concat([
@@ -16,10 +16,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/index.js"
   },
   {
-    "url" : "static/precache-manifest.3277778a04fe07b218be2e650e681aec.js"
+    "url" : "/static/precache-manifest.3277778a04fe07b218be2e650e681aec.js"
   },
   {
-    url : 'static/manifest.json'
+    url : '/static/manifest.json'
   }
 ]);
 
