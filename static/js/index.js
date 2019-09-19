@@ -2,7 +2,7 @@
  * @Author: zhouhong07
  * @Date: 2019-09-18 16:45:45
  * @LastEditors: 
- * @LastEditTime: 2019-09-19 18:15:48
+ * @LastEditTime: 2019-09-19 18:28:58
  * @Description: file content
  */
 console.log('innnnn');
@@ -31,7 +31,7 @@ function register(config) {
     }
 
     window.addEventListener('load', () => {
-      const swUrl = `https://rainbowzh.github.io/workboxServiceWorker.js`;
+      const swUrl = `https://rainbowzh.github.io/static/workboxServiceWorker.js`;
       // const swUrl = `/workboxServiceWorker.js`;
       if (isLocalhost) {
         // This is running on localhost. Let's check if a service worker still exists or not.
