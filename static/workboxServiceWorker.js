@@ -2,7 +2,7 @@
  * @Author: zhouhong07
  * @Date: 2019-09-03 18:01:11
  * @LastEditors: 
- * @LastEditTime: 2019-09-19 18:35:52
+ * @LastEditTime: 2019-09-19 18:41:10
  * @Description: file content
  */
 /**
@@ -18,10 +18,10 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("static/workbox-sw.js");
+importScripts("/workbox-sw.js");
 
 importScripts(
-  "static/precache-manifest.3277778a04fe07b218be2e650e681aec.js"
+  "/precache-manifest.3277778a04fe07b218be2e650e681aec.js"
 );
 
 workbox.core.skipWaiting();
