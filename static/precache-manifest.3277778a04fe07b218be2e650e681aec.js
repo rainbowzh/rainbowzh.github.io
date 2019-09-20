@@ -2,7 +2,7 @@
  * @Author: zhouhong07
  * @Date: 2019-09-03 18:01:11
  * @LastEditors: 
- * @LastEditTime: 2019-09-20 11:04:14
+ * @LastEditTime: 2019-09-20 11:22:52
  * @Description: file content
  */
 self.__precacheManifest = (self.__precacheManifest || []).concat([
@@ -24,7 +24,4 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     'url' : '/static/manifest.json'
   },
-  {
-    "url" : 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js'
-  }
 ]);

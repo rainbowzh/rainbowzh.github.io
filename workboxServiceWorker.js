@@ -2,7 +2,7 @@
  * @Author: zhouhong07
  * @Date: 2019-09-03 18:01:11
  * @LastEditors: 
- * @LastEditTime: 2019-09-20 10:41:35
+ * @LastEditTime: 2019-09-20 11:22:25
  * @Description: file content
  */
 /**
@@ -52,4 +52,15 @@ workbox.routing.registerRoute(
   workbox.strategies.networkFirst({
     cacheName: 'rainbow-change-cache'
   })
+)
+workbox.routing.registerRoute(
+  `https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js`,
+  workbox.strategies.cacheFirst({
+    plugins: [
+        // 这个插件是让匹配的请求的符合开发者指定的条件的返回结果可以被缓存
+        new workbox.cacheableResponse.Plugin({
+            statuses: [0, 200]
+        })
+    ]
+  }),
 )
