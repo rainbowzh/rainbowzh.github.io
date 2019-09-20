@@ -2,7 +2,7 @@
  * @Author: zhouhong07
  * @Date: 2019-09-03 18:01:11
  * @LastEditors: 
- * @LastEditTime: 2019-09-19 20:00:36
+ * @LastEditTime: 2019-09-20 10:41:35
  * @Description: file content
  */
 /**
@@ -41,7 +41,7 @@ workbox.core.setCacheNameDetails({
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {
-  ignoreUrlParametersMatching: [/.*/],
+  // ignoreUrlParametersMatching: [/.*/],
   cleanUrls: false,
 });
 
