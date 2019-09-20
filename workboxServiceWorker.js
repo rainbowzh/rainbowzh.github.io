@@ -2,7 +2,7 @@
  * @Author: zhouhong07
  * @Date: 2019-09-03 18:01:11
  * @LastEditors: 
- * @LastEditTime: 2019-09-20 11:26:25
+ * @LastEditTime: 2019-09-20 14:42:51
  * @Description: file content
  */
 /**
@@ -47,15 +47,15 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest, {
 
 workbox.googleAnalytics.initialize({});
 
-workbox.routing.registerRoute(
-  /^https:\/\/rainbowzh.github.io\//i,
-  workbox.strategies.networkFirst({
-    cacheName: 'rainbow-change-cache'
-  })
-)
+// workbox.routing.registerRoute(
+//   /^https:\/\/rainbowzh.github.io\//i,
+//   workbox.strategies.networkFirst({
+//     cacheName: 'rainbow-change-cache'
+//   })
+// )
 workbox.routing.registerRoute(
   `https://unpkg.com/swiper/js/swiper.min.js`,
-  workbox.strategies.cacheFirst({
+  workbox.strategies.networkFirst({
     plugins: [
         // 这个插件是让匹配的请求的符合开发者指定的条件的返回结果可以被缓存
         new workbox.cacheableResponse.Plugin({
