@@ -2,7 +2,7 @@
  * @Author: zhouhong07
  * @Date: 2019-09-03 18:01:11
  * @LastEditors: 
- * @LastEditTime: 2019-09-20 14:42:51
+ * @LastEditTime: 2019-10-18 13:29:11
  * @Description: file content
  */
 /**
@@ -38,7 +38,7 @@ workbox.core.setCacheNameDetails({
   suffix: 'v1.0.0',
 });
 
-self.__precacheManifest = [].concat(self.__precacheManifest || []);
+self.__precacheManifest = ['https://pic6.58cdn.com.cn/mobile/big/n_v2505a55e534be4031861f1d0ef3f0fa43.jpg?ss=1&cut=1&t=1&w=750.0&cuth=599.00&cutx=0.00&h=410.0&cuty=1.00&cutw=1096.17&crop=1&cpos=middle'].concat(self.__precacheManifest || []);
 
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {
   // ignoreUrlParametersMatching: [/.*/],
